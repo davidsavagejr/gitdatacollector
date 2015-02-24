@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="DataCollector" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WorkerRole name="DataCollectorService" vmsize="ExtraSmall">
+    <ConfigurationSettings>
+      <Setting name="Setting1" />
+    </ConfigurationSettings>
+  </WorkerRole>
+  <WorkerRole name="DataCollectorProcessor" vmsize="ExtraSmall">
+    <ConfigurationSettings>
+      <Setting name="Microsoft.ServiceBus.ConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole>
+</ServiceDefinition>
